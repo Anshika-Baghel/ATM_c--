@@ -114,14 +114,13 @@ int main()
                     case 1:
                     cout<<"Your bank balance is :"<<user1.getbalance()<<endl;
                     break;
-
-                    case2:
+                    case 2:
                     cout<<"Enter the amount :"<<endl;
                     cin>>amount;
                     user1.cashWithDraw(amount);
                     break;
 
-                    case3:
+                    case 3:
                     cout<<"User Details are:"<<endl;
                     cout<<"Account No.:"<<user1.getAccountno()<<endl;
                     cout<<"Name:"<<user1.getName()<<endl;
@@ -129,7 +128,7 @@ int main()
                     cout<<"Mobile No.:"<<user1.getmobileno()<<endl;
                     break;
 
-                    case4:
+                    case 4:
                     cout<<"Enter old mobile no."<<endl;
                     cin>>oldMobileNo;
                     cout<<"Enter new mobile no."<<endl;
@@ -137,8 +136,9 @@ int main()
                     user1.setMobile(oldMobileNo,newMobileNo);
                     break;
 
-                    case5:
+                    case 5:
                     exit(0);
+                    break;
 
                     default:
                     cout<<"Enter valid data :"<<endl;
@@ -147,6 +147,10 @@ int main()
 
                 }
             }while(1);
+        }
+
+        else{
+            cout<<"Invalid input:"<<endl;
         }
     }while(1);
     return 0;
